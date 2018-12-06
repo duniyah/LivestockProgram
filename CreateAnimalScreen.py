@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'CreateAnimalScreen.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(519, 400)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.animaltypeBox = QtWidgets.QComboBox(self.centralwidget)
+        self.animaltypeBox.setGeometry(QtCore.QRect(150, 50, 181, 22))
+        self.animaltypeBox.setObjectName("animaltypeBox")
+        self.animaltypeBox.addItem("")
+        self.animaltypeBox.addItem("")
+        self.animaltypeBox.addItem("")
+        self.animaltypeBox.addItem("")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(150, 30, 101, 16))
+        self.label.setObjectName("label")
+        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
+        self.textBrowser.setGeometry(QtCore.QRect(150, 80, 181, 31))
+        self.textBrowser.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.textBrowser.setLineWidth(0)
+        self.textBrowser.setObjectName("textBrowser")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(150, 120, 101, 16))
+        self.label_2.setObjectName("label_2")
+        self.genderBox = QtWidgets.QComboBox(self.centralwidget)
+        self.genderBox.setGeometry(QtCore.QRect(150, 140, 181, 22))
+        self.genderBox.setObjectName("genderBox")
+        self.genderBox.addItem("")
+        self.genderBox.addItem("")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(150, 180, 101, 16))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(150, 240, 101, 16))
+        self.label_4.setObjectName("label_4")
+        self.healthBox = QtWidgets.QComboBox(self.centralwidget)
+        self.healthBox.setGeometry(QtCore.QRect(150, 260, 181, 22))
+        self.healthBox.setObjectName("healthBox")
+        self.healthBox.addItem("")
+        self.healthBox.addItem("")
+        self.healthBox.addItem("")
+        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit.setGeometry(QtCore.QRect(150, 200, 181, 20))
+        self.lineEdit.setObjectName("lineEdit")
+        self.saveBtn = QtWidgets.QPushButton(self.centralwidget)
+        self.saveBtn.setGeometry(QtCore.QRect(180, 310, 121, 23))
+        self.saveBtn.setObjectName("saveBtn")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 519, 21))
+        self.menubar.setObjectName("menubar")
+        self.menuCreate_Animal = QtWidgets.QMenu(self.menubar)
+        self.menuCreate_Animal.setObjectName("menuCreate_Animal")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.menubar.addAction(self.menuCreate_Animal.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.animaltypeBox.setItemText(0, _translate("MainWindow", "Cow"))
+        self.animaltypeBox.setItemText(1, _translate("MainWindow", "Chicken"))
+        self.animaltypeBox.setItemText(2, _translate("MainWindow", "Goat"))
+        self.animaltypeBox.setItemText(3, _translate("MainWindow", "Sheep"))
+        self.label.setText(_translate("MainWindow", "Select Animal Type"))
+        self.label_2.setText(_translate("MainWindow", "Gender:"))
+        self.genderBox.setItemText(0, _translate("MainWindow", "Male"))
+        self.genderBox.setItemText(1, _translate("MainWindow", "Female"))
+        self.label_3.setText(_translate("MainWindow", "Color:"))
+        self.label_4.setText(_translate("MainWindow", "Health State:"))
+        self.healthBox.setItemText(0, _translate("MainWindow", "Healthy"))
+        self.healthBox.setItemText(1, _translate("MainWindow", "Sick"))
+        self.healthBox.setItemText(2, _translate("MainWindow", "Pregnant"))
+        self.saveBtn.setText(_translate("MainWindow", "Save Animal Entry"))
+        self.menuCreate_Animal.setTitle(_translate("MainWindow", "Create Animal"))
+
